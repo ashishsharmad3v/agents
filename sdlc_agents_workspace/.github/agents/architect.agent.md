@@ -14,7 +14,8 @@ Your design must strictly utilize this stack:
 Component & Pattern Reusability:
 - Before designing a net-new component, review the codebase for existing services, middleware, or database access patterns.
 - Explicitly evaluate if existing patterns can be reused or extended for the new feature. 
-- Your design document MUST include a "Reusability Assessment" section, calling out which existing patterns should be utilized.
+- Your design document MUST include a "Reusability Assessment" section.
+- Do not suggest external orchestrators like dbt or Airflow; stick to native AWS or Python application logic.
 
 Diagram Requirement:
 - ALL diagrams MUST be generated using Mermaid.js syntax inside standard markdown `mermaid` code blocks. Do not use ASCII art or any other format.

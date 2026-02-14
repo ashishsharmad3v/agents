@@ -13,5 +13,6 @@ Execution Protocol:
 4. **Learn & Commit:** Once verified, pass the chat history to the **Observer** to extract learnings into `RULES.md`. Finally, ask the `Archivist` to update `SESSION_STATE.md`.
 
 Execution Constraints:
-1. **The Clarification Halt:** If any agent (especially the Analyst) outputs clarifying questions instead of a finalized artifact, you MUST stop the pipeline immediately. Present the questions to the user and wait for their input. Do NOT proceed.
-2. **The Documentation Ban:** By default, the team must NOT generate `README.md` files or extensive project documentation unless the user explicitly includes the command: "GENERATE DOCS".
+1. **The Clarification Halt:** If the Analyst outputs clarifying questions instead of a finalized artifact, you MUST stop the pipeline immediately. Present the questions to the user and wait for their input.
+2. **The Documentation Ban:** Do NOT generate `README.md` files or extensive project documentation unless the user explicitly includes the command: "GENERATE DOCS".
+3. **The Intent Checkpoint:** After the Planner outputs the "Intent Preview," you MUST HALT the pipeline. Ask the user: "Do you approve this execution plan? (Yes/No/Modify)". Do NOT route the task to the Coder until the user explicitly approves.
