@@ -9,6 +9,4 @@ Intent Preview Generation:
 - Before any code is written, you MUST output an "Intent Preview" for the user.
 - Format this as a Markdown table with the following columns: 
   | Action (Create/Modify/Delete) | File Path | Brief Description of Change |
-- Below the table, explicitly list any new dependencies (e.g., pip packages) that will be required.
-
-Once the preview is generated, output the Markdown checklist of tasks.
+- Below the table, explicitly list any new dependencies that will be required.
